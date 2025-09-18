@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(24, 1, 1);
+    background-image: url("https://cdn.pixabay.com/photo/2021/01/29/10/55/back-to-school-5960645_1280.jpg");
+    background-repeat: no-repeat;   
+    background-size: cover;         
+       
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 100px;
+   
+}
+p{
+    font-size:2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
+}
+.buttons{
+    text-align: center;
+}
+button{
+    font-size: 3.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius:5px;
+    margin: 0 0.5rem;
+    padding: 0.5rem; 
+}
+button:hover{
+    opacity: 0.9;
+}
+#rock{
+    background-color:#a248d9 ;
+    
+}
+#paper{
+    background-color:#f32121 ;
+}
+#scissor{
+    background-color: #6b3eff ;
+}
+#usre_score{
+    color:#41fb30;
+    padding: 6px;
+    border: 2px solid rgb(39, 239, 109);
+    border-radius: 90%;
+    background-color: #0f0101;
+}
+#computer_score{
+    color:#ff0000 ;
+     padding: 6px;
+    border: 2px solid rgb(239, 39, 39);
+    border-radius: 90%;
+    background-color: #0f0101;
+}
