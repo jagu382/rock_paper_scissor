@@ -20,22 +20,25 @@ function computerplay(){
 }
 
 
-function play_game(playerSelect,computerSelect){
+function play_game(playerSelect, computerSelect) {
+    switch (true) {
+        case (playerSelect === computerSelect):
+            return "It is a tie, choose again";
 
-    if(playerSelect===computerSelect){
-        return "It is a tie , choose again "
-    }
-    else if((playerSelect==="rock" && computerSelect==="scissor")||(playerSelect==="paper" && computerSelect==="rock")||(playerSelect==="scissor" && computerSelect==="paper")){
-        player_score++;
-        pScore.innerHTML=player_score;
-        return " you win " +playerSelect+ "  beats " +computerSelect+ " , choose again";
-    }
-    else{
-        computer_score++
-        cScore.innerHTML=computer_score
-        return "you lose " +computerSelect+ " beats " +playerSelect+ " , choose again";
+        case (playerSelect === "rock" && computerSelect === "scissor"):
+        case (playerSelect === "paper" && computerSelect === "rock"):
+        case (playerSelect === "scissor" && computerSelect === "paper"):
+            player_score++;
+            pScore.innerHTML = player_score;
+            return "You win! " + playerSelect + " beats " + computerSelect + " , choose again";
+
+        default:
+            computer_score++;
+            cScore.innerHTML = computer_score;
+            return "You lose! " + computerSelect + " beats " + playerSelect + " , choose again";
     }
 }
+
 
 
 
