@@ -5,8 +5,12 @@ const pScore=document.querySelector("#usre_score")
 const cScore=document.querySelector("#computer_score")
 const FinalResult=document.querySelector("#result")
 
+//! sounds
+let dice=new Audio("./sounds/dice.mp3")
+
 buttons.forEach((button)=>{
     button.addEventListener("click",()=>{
+        dice.play()
         const result=play_game(button.id,computerplay());
         FinalResult.innerHTML=result;
     })
